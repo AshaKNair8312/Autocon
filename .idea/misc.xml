@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/curved_green.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/curved_maroon.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/curved_orange.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/curved_yellow.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/custom_progress.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/logo.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/layout/activity_history.xml" value="0.1484375" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2911458333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2911458333333333" />
+        <entry key="app/src/main/res/layout/activity_print.xml" value="0.2911458333333333" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2911458333333333" />
+        <entry key="app/src/main/res/layout/history_item.xml" value="0.2911458333333333" />
+        <entry key="app/src/main/res/layout/print_item.xml" value="0.2911458333333333" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/launcher_icon.xml" value="0.16875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

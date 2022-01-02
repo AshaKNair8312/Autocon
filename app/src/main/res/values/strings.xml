@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CheckoutPointApplication</string>
+
+    <!--    history-->
+    <string name="history">History</string>
+    <string name="contentDescription">Content Description</string>
+    <string name="INVH_DT"><b>INVH_DT :</b></string>
+    <string name="INVH_TM"><b>INVH_TM :</b></string>
+    <string name="INVH_SERV_MODE"><b>INVH_SERV_MODE :</b></string>
+    <string name="INVH_NET_TOTAL"><b>INVH_NET_TOTAL :</b></string>
+    <string name="INVH_POYNT_STATUS"><b>INVH_POYNT_STATUS :</b></string>
+    <string name="INVH_CUR_CODE"><b>INVH_CUR_CODE :</b></string>
+
+    <!--    print-->
+    <string name="brandName">Brand Name</string>
+    <string name="tagline">Tagline space here</string>
+    <string name="invoice"> TAX INVOICE</string>
+    <string name="invoiceTo">Invoice to :</string>
+    <string name="date">Date :</string>
+    <string name="cashier">Cashier :</string>
+    <string name="itemInfo">ITEM INFO</string>
+    <string name="rate">RATE</string>
+    <string name="value">VALUE</string>
+    <string name="aed">AED</string>
+
+<!--    home-->
+    <string name="print">Print</string>
+
+
+</resources>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.checkoutpointapplication.views.print.PrintViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".views.history.HistoryActivity">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_26"
+                android:src="@drawable/logo1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/brandName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brandName"
+                android:textSize="@dimen/txt_20"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintStart_toEndOf="@id/logo"
+                app:layout_constraintTop_toTopOf="@id/logo" />
+
+            <TextView
+                android:id="@+id/tagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tagline"
+                android:textSize="@dimen/txt_12"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                app:layout_constraintStart_toEndOf="@id/logo"
+                app:layout_constraintTop_toBottomOf="@id/brandName" />
+
+            <TextView
+                android:id="@+id/invoiceTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_30"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/invoiceTo"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/txt_16"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/margin_20"
+                app:layout_constraintTop_toBottomOf="@id/tagline" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_6"
+                android:text="@{viewModel.printdata.name}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                app:layout_constraintStart_toStartOf="@id/invoiceTo"
+                app:layout_constraintTop_toBottomOf="@id/invoiceTo"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:text="@{viewModel.printdata.address}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/invoiceTo"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                android:fontFamily="@font/poppins_regular"
+                tools:text="Address" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:text="@{viewModel.printdata.country}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/invoiceTo"
+                app:layout_constraintTop_toBottomOf="@id/address"
+                android:fontFamily="@font/poppins_regular"
+                tools:text="Country" />
+
+            <TextView
+                android:id="@+id/invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_50"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/invoice"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/txt_20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/transactionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4"
+                android:textColor="@color/black"
+                android:text="@{viewModel.printdata.transactionNumber}"
+                android:textSize="@dimen/txt_14"
+                android:fontFamily="@font/poppins_regular"
+                app:layout_constraintEnd_toEndOf="@id/invoice"
+                app:layout_constraintTop_toBottomOf="@id/invoice"
+                tools:text="TRNSXXXXXX" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:text="@{` `+viewModel.printdata.date}"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/invoice"
+                app:layout_constraintTop_toBottomOf="@id/transactionNumber"
+                tools:text=" 01-Nov-2021" />
+
+
+            <TextView
+                android:id="@+id/dateHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:text="@string/date"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                app:layout_constraintEnd_toStartOf="@id/date"
+                app:layout_constraintTop_toBottomOf="@id/transactionNumber" />
+
+            <TextView
+                android:id="@+id/cashier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:text="@{` `+viewModel.printdata.cashier}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/invoice"
+                app:layout_constraintTop_toBottomOf="@id/date"
+                android:fontFamily="@font/poppins_regular"
+                tools:text=" SaratRaj" />
+
+            <TextView
+                android:id="@+id/cashierHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:text="@string/cashier"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                app:layout_constraintEnd_toStartOf="@id/cashier"
+                app:layout_constraintTop_toBottomOf="@id/date" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/titleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_30"
+                android:background="@color/primary"
+                android:padding="@dimen/padding_10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/country">
+
+                <TextView
+                    android:id="@+id/itemInfoHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/itemInfo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+                <TextView
+                    android:id="@+id/itemRateHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_50"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/rate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_14"
+                    app:layout_constraintEnd_toStartOf="@id/itemValueHead"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/itemValueHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/value"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/itemRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{viewModel.printdata.itemRate+` `+@string/aed}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@id/itemValue"
+                app:layout_constraintTop_toBottomOf="@id/titleLayout"
+                tools:text="15.00"/>
+
+            <TextView
+                android:id="@+id/itemValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{viewModel.printdata.itemValue+` `+@string/aed}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleLayout"
+                tools:text="15.00"/>
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{viewModel.printdata.itemName}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/itemBrand"
+                app:layout_constraintTop_toBottomOf="@id/titleLayout"
+                tools:text="Chocolate X 1" />
+
+            <TextView
+                android:id="@+id/itemBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_8"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{viewModel.printdata.itemBrand}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemName" />
+
+
+            <TextView
+                android:id="@+id/itemType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_8"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{viewModel.printdata.itemType}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemBrand"
+                tools:text="LARGE" />
+
+            <View
+                android:id="@+id/itemView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:background="@color/primary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemType" />
+
+            <TextView
+                android:id="@+id/subTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{viewModel.printdata.subTotal+` `+@string/aed}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemView"
+                tools:text="Sub Total :   15.00" />
+
+            <TextView
+                android:id="@+id/taxableAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_8"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{viewModel.printdata.taxableAmount+` `+@string/aed}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/subTotal"
+                app:layout_constraintTop_toBottomOf="@id/subTotal"
+                tools:text="Taxable Amount :   15.00" />
+
+            <TextView
+                android:id="@+id/vat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_8"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{viewModel.printdata.vat}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/subTotal"
+                app:layout_constraintTop_toBottomOf="@id/taxableAmount"
+                tools:text="VAT :   0.75" />
+
+            <View
+                android:id="@+id/amountView"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@color/primary"
+                app:layout_constraintEnd_toEndOf="@id/taxableAmount"
+                app:layout_constraintStart_toStartOf="@id/taxableAmount"
+                app:layout_constraintTop_toBottomOf="@id/vat" />
+
+            <TextView
+                android:id="@+id/netTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_20"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@{viewModel.printdata.netTotal+` `+@string/aed}"
+                android:textSize="@dimen/txt_16"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/subTotal"
+                app:layout_constraintTop_toBottomOf="@id/amountView"
+                tools:text="Net Total :   15.75" />
+
+            <View
+                android:id="@+id/totalView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:background="@color/primary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/netTotal" />
+
+            <TextView
+                android:id="@+id/vatPercTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{viewModel.printdata.vatTitle}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/totalView"
+                tools:text="VAT%   Amt   VAT   Net.Amt" />
+
+            <TextView
+                android:id="@+id/vatPerc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_14"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@{viewModel.printdata.vatPercentage}"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vatPercTitle"
+                tools:text="5%   15.00    0.75   15.75" />
+
+            <TextView
+                android:id="@+id/thankyou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_30"
+                android:padding="@dimen/padding_10"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{viewModel.printdata.thankyou}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vatPerc"
+                tools:text="**** THANK YOU ****" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
+
+
+<!--<TextView-->
+<!--android:id="@+id/transactionNumberHead"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginStart="@dimen/margin_4"-->
+<!--android:layout_marginTop="@dimen/margin_16"-->
+<!--android:text="TXN No : "-->
+<!--android:textSize="@dimen/txt_14"-->
+<!--app:layout_constraintEnd_toStartOf="@id/transactionNumber"-->
+<!--app:layout_constraintTop_toBottomOf="@id/invoice"-->
+<!--    />-->
+
+

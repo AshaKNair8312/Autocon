@@ -1,0 +1,299 @@
+﻿{
+  "IsSuccess": true,
+  "ErrCode": "",
+  "ErrMsg": "",
+  "ResponseData": [
+    {
+      "PRINT_HEADER": [
+        {
+          "printType1": "TEXT",
+          "printData1": "      MERCHANT NAME      ",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "    PO BOX 0000,DEIRA    ",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "        DUBAI,UAE        ",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "\n",
+          "printAlign1": 1,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "   TRN:XXXXXXXXXXXXXXX   ",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "     ----------------     ",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "       TAX INVOICE       ",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "------------------------------",
+          "printAlign1": 0,
+          "printFont1": 2,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "Date        : 01-Nov-2021 ",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "Cashier     : SarathrajM  ",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        }
+    
+   
+      ],
+      "PRINT_BODY": [
+	   {
+          "printType1": "TEXT",
+          "printData1": "------------------------------",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+		 {
+          "printType1": "TEXT",
+          "printData1": "ITEM INFO    RATE	 VALUE",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+		 {
+          "printType1": "TEXT",
+          "printData1": "------------------------------",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "World Clas   15.00   15.00",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "s Chocolate x 1           ",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "  LARGE",
+          "printAlign1": 0,
+          "printFont1": 0,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        }
+      ],
+      "PRINT_FOOTER": [
+        {
+          "printType1": "TEXT",
+          "printData1": "------------------------------",
+          "printAlign1": 0,
+          "printFont1": 2,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "    Sub Total  :     15.00",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "    Taxable Amt:     15.00",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "    VAT        :      0.75",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "    ----------------------",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "    Net Total  :     15.75",
+          "printAlign1": 0,
+          "printFont1": 3,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "------------------------------",
+          "printAlign1": 0,
+          "printFont1": 2,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "VAT%    Amt    VAT Net.Amt",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "  5%  15.00   0.75   15.75",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "------------------------------",
+          "printAlign1": 0,
+          "printFont1": 2,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "\n",
+          "printAlign1": 1,
+          "printFont1": 2,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        },
+        {
+          "printType1": "TEXT",
+          "printData1": "   **** THANK YOU ****   ",
+          "printAlign1": 0,
+          "printFont1": 1,
+          "printType2": "TEXT",
+          "printData2": "",
+          "printAlign2": 0,
+          "printFont2": 0
+        }
+
+
+      ]
+    }
+  ]
+}
